@@ -40,10 +40,12 @@ class ChallengeComponent extends React.Component {
 
   handleSubmitResult(event) {
     event.preventDefault();
-    ApiClient.sendGuess(this.state.user,
-      this.state.a, this.state.b,
-      this.state.guess)
-      .then(res => {
+    ApiClient.sendGuess(
+      this.state.user,
+      this.state.a,
+      this.state.b,
+      this.state.guess
+    ).then(res => {
         if (res.ok) {
           res.json().then(json => {
             if (json.correct) {

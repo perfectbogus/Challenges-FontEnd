@@ -1,5 +1,5 @@
 class ApiClient {
-  static SERVER_URL = 'http://localhost:3030';
+  static SERVER_URL = 'http://localhost:8080';
   static GET_CHALLENGE = '/challenges/random';
   static POST_RESULT = '/attempts';
 
